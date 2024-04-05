@@ -1,0 +1,9 @@
+{
+  "name": "auth-log-source",
+  "config": {
+    "connector.class": "org.apache.kafka.connect.file.FileStreamSourceConnector",
+    "tasks.max": "1",
+    "file": "/var/log/auth.log",
+    "topic": "auth"
+  }
+}
